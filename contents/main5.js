@@ -28,7 +28,6 @@ var off = new ROSLIB.Service({
 	messageType : 'std_srvs/Trigger'
 });
 
-/*
 document.getElementById('motor_on').addEventListener('click', function(e){
 	on.callService(ROSLIB.ServiceRequest(),function(result){
 		if(result.success){
@@ -46,8 +45,8 @@ document.getElementById('motor_off').addEventListener('click', function(e){
 		}
 	});
 });
-*/
 
+/*
 $('#motor_on').on('click', function(e){
         on.callService(ROSLIB.ServiceRequest(),function(result){
                 if(result.success){
@@ -66,6 +65,7 @@ $('#motor_off').on('click', function(e){
                 }
         });
 });
+*/
 
 var vel = new ROSLIB.Topic({
 	ros : ros,
